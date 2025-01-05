@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuneTide - The Music You Need</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify"> TuneTide</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="songList">
+            <h1>Best of TuneTide Songs</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="covers/1.jpg" alt="1">
+                    <span>Channa Mereya-Arijit Singh</span>
+                    <span class="songlistplay"><span class="timestamp">5:34 <i id="0" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/2.jpg" alt="2">
+                    <span>Ik Vari Aa-Arijit Singh</span>
+                    <span class="songlistplay"><span class="timestamp">5:34 <i id="1" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/3.jpg" alt="3">
+                    <span>Mitwaa- Shankar-Ehsan-Loy</span>
+                    <span class="songlistplay"><span class="timestamp">5:34 <i id="2" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/4.jpg" alt="4">
+                    <span>Jane Nahi Denge Tujhe-Sonu Nigam</span>
+                    <span class="songlistplay"><span class="timestamp">5:34 <i id="3" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/5.jpg" alt="5">
+                    <span>Abhi Mujh Mein kahin-Sonu Nigam</span>
+                    <span class="songlistplay"><span class="timestamp">5:34 <i id="4" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/6.jpg" alt="6">
+                    <span>Tere liye hum hai-Roopkumar</span>
+                    <span class="songlistplay"><span class="timestamp">5:34 <i id="5" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/7.jpg" alt="7">
+                    <span>Har ghadi badal rahi hai -Sonu Nigam</span>
+                    <span class="songlistplay"><span class="timestamp">5:34 <i id="6" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/8.jpg" alt="8">
+                    <span>Jo Tum Mere ho- Anuv Jain</span>
+                    <span class="songlistplay"><span class="timestamp">5:34 <i id="7" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="songBanner"></div>
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+           
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" alt="" id="gif">
+            <span id="songName">Let me love you - Justin Bieber</span>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/1fe826188e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

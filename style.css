@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&family=Varela+Round&display=swap');
+
+body {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+    padding: 0;
+ 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px 20px;
+    margin: 0;
+    color: white;
+}
+
+nav ul li {
+    padding: 0 12px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+    color: rgb(255, 128, 24);
+}
+
+.brand img {
+    width: 45px;
+    margin-right: 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: rgb(255, 128, 24);
+}
+
+.container {
+    min-height: 70vh;
+    width: 75%;
+    margin: 30px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    
+}
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('image.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6; 
+    z-index: -1; 
+    border-radius: 12px;
+}
+
+.songItemContainer {
+    margin-top: 20px;
+}
+
+.songItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.songItem:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.songItem img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.songItem p {
+    flex: 1;
+    margin: 0 20px;
+    font-size: 1rem;
+}
+
+.timestamp {
+    font-size: 0.9rem;
+}
+
+.timestamp i {
+    color: rgb(255, 128, 24);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.timestamp i:hover {
+    color: rgb(255, 128, 24);
+}
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.icons i {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.icons i:hover {
+    color: rgb(255, 128, 24);
+    transform: scale(1.1);
+}
+
+#myProgressBar {
+    width: 80%;
+    height: 8px;
+    border-radius: 5px;
+    color: rgb(255, 128, 24);
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+}
+
+#myProgressBar::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#myProgressBar::-webkit-slider-thumb:hover {
+    color: rgb(255, 128, 24);
+}
+
+.songInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.songInfo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.songInfo span {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .songItem p {
+        font-size: 0.9rem;
+    }
+
+    .icons i {
+        font-size: 1.5rem;
+    }
+
+    #myProgressBar {
+        width: 90%;
+    }
+}
