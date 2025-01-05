@@ -13,14 +13,14 @@ Features
 
 File Structure
 
-├── covers/         # Contains album cover images for songs
-├── songs/          # Contains audio files for the songs
-├── image.png       # Background image used in the player
-├── index.html      # Main HTML structure
-├── logo.png        # Logo for TuneTide
-├── playing.gif     # Animated GIF displayed during playback
-├── script.js       # Main JavaScript functionality
-├── style.css       # Styling for the player
+├── covers/       
+├── songs/      
+├── image.png     
+├── index.html     
+├── logo.png     
+├── playing.gif    
+├── script.js       
+├── style.css      
 
 How to Use
 -Clone or download this repository to your local machine.
